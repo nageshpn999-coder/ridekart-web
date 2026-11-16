@@ -1,0 +1,56 @@
+@font-face{font-family:'Poppins';src:url(fonts/Poppins-Regular.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Poppins';src:url(fonts/Poppins-SemiBold.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Poppins';src:url(fonts/Poppins-Bold.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Noto Sans Telugu';src:url(fonts/NotoSansTelugu-Regular.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Noto Sans Telugu';src:url(fonts/NotoSansTelugu-SemiBold.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Noto Sans Telugu';src:url(fonts/NotoSansTelugu-Bold.woff2) format('woff2');font-weight:700;font-display:swap}
+:root{--g:#0F6B3F;--gd:#0a4d2d;--y:#F2B51D;--ink:#1d2b22;--mut:#5B6B61;--bg:#f6f8f5;--line:#dfe6e0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Poppins,"Noto Sans Telugu",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+html[lang=te] .en,html[lang=en] .te{display:none!important}
+a{color:var(--g)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--g);color:#fff;position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:22px}
+.brand img{width:38px;height:38px;border-radius:10px}
+nav{margin-left:auto;display:flex;align-items:center;gap:6px}
+nav a{color:#fff;text-decoration:none;font-size:14px;padding:6px 8px;border-radius:8px;opacity:.9}
+nav a:hover{background:rgba(255,255,255,.12)}
+.lang{border:1px solid rgba(255,255,255,.6);background:none;color:#fff;border-radius:8px;padding:5px 10px;font:600 14px Poppins,sans-serif;cursor:pointer}
+@media(max-width:640px){nav a.hide-m{display:none}}
+.hero{background:linear-gradient(160deg,var(--g),var(--gd));color:#fff;padding:56px 0 64px}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.2;margin:0 0 14px}
+.hero p{font-size:18px;opacity:.92;max-width:620px;margin:0 0 26px}
+.pill{display:inline-block;background:var(--y);color:#1d2b22;font-weight:700;border-radius:999px;padding:6px 14px;font-size:14px;margin-bottom:16px}
+.btn{display:inline-block;background:var(--y);color:#1d2b22;text-decoration:none;font-weight:700;border-radius:12px;padding:13px 22px;margin:4px 8px 4px 0}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+section{padding:52px 0}
+section.alt{background:var(--bg)}
+h2{font-size:clamp(22px,3.5vw,32px);margin:0 0 8px}
+.sub{color:var(--mut);margin:0 0 28px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:6px 0 6px;font-size:19px}
+.card p{margin:0;color:var(--mut)}
+.veh{text-align:center}
+.veh img{width:150px;height:auto}
+.price{font-size:15px;color:var(--ink);margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:15px}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}
+th{background:var(--g);color:#fff;font-weight:600}
+.note{font-size:14px;color:var(--mut);margin-top:12px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:4px 0 14px 48px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:2px;width:34px;height:34px;border-radius:50%;background:var(--y);font-weight:700;display:flex;align-items:center;justify-content:center}
+.contact{display:flex;flex-wrap:wrap;gap:12px}
+footer{background:#14241a;color:#cfd9d2;padding:34px 0;font-size:14px}
+footer a{color:#fff;margin-right:16px}
+footer .links{margin-bottom:12px}
+.doc{padding:40px 0 60px}
+.doc h1{font-size:clamp(26px,4vw,36px);margin:0 0 4px}
+.doc .upd{color:var(--mut);margin:0 0 28px}
+.doc h2{font-size:21px;margin:30px 0 8px}
+.doc p,.doc li{max-width:780px}
+.doc .box{background:var(--bg);border-left:4px solid var(--y);padding:14px 18px;border-radius:8px;max-width:780px}
